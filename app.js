@@ -1,4 +1,6 @@
 
+//Variable for roll dice button location
+const rollDiceButton = document.querySelector('.btn');
 
 //Roll dice to a random number
 function rollDice(min, max) {
@@ -10,3 +12,5 @@ function rollDice(min, max) {
 
 //setInterval(rollDice, 1000);
 
+//When .btn is clicked, init the function
+rollDiceButton.addEventListener('click', rollDice)
