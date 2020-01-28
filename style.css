@@ -1,9 +1,18 @@
 
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10rem;
+
+}
+
 .btn{
 padding: 3rem;
 flex: 1;
 display: flex;
 justify-content: center;
+flex-direction: column;
 }
 
 .btn-roll{
