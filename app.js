@@ -1,7 +1,7 @@
 //VARIABLES
 //Variable for roll dice button location
 const rollDiceButton = document.querySelector('.btn');
-const flipCard = document.querySelector('.flip-card-inner');
+const flipCard = document.querySelectorAll('.flip-card-inner');
 const flipCardA = document.querySelector('.flip-card-front');
 const flipCardB = document.querySelector('.flip-card-back');
 
@@ -35,6 +35,6 @@ function flipCards (){
 rollDiceButton.addEventListener('click', rollDice)
 rollDiceButton.addEventListener('click', rollDice2)
 
-flipCard.addEventListener('click', flipCards)
+flipCard.forEach(flip => flip.addEventListener('click', flipCards))
 
 
